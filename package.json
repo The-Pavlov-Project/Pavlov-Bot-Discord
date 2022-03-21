@@ -1,0 +1,25 @@
+{
+  "main": "main.js",
+  "type": "module",
+  "dependencies": {
+    "@discordjs/rest": "^0.3.0",
+    "discord-api-types": "^0.29.0",
+    "discord.js": "^13.6.0"
+  },
+  "name": "pavlov-bot-discord",
+  "version": "1.0.0",
+  "scripts": {
+    "run": "node main.js",
+    "register": "node register.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-Pavlov-Project/Pavlov-Bot-Discord.git"
+  },
+  "author": "HoodyH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/The-Pavlov-Project/Pavlov-Bot-Discord/issues"
+  },
+  "description": "A discord bot for the Pavlov Project"
+}
