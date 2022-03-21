@@ -9,7 +9,7 @@
   "name": "pavlov-bot-discord",
   "version": "1.0.0",
   "scripts": {
-    "run": "node main.js",
+    "run": "node index.js",
     "register": "node register.cjs"
   },
   "repository": {
