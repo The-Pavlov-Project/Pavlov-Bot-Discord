@@ -1,5 +1,5 @@
 {
-  "main": "main.js",
+  "main": "index.js",
   "type": "module",
   "dependencies": {
     "@discordjs/rest": "^0.3.0",
@@ -10,7 +10,7 @@
   "name": "pavlov-bot-discord",
   "version": "1.0.0",
   "scripts": {
-    "run": "node src/index.js",
+    "run": "node index.js",
     "register": "node src/register.cjs"
   },
   "repository": {
