@@ -6,4 +6,4 @@ import { discordClient } from "./src/bot/client.js";
 await api.listen(3000);
 
 // Start discord client
-await discordClient.login(process.env.TOKEN);
+await discordClient.login(process.env.DISCORD_TOKEN);

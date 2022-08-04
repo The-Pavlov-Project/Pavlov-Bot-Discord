@@ -30,6 +30,21 @@ export const createScheduleEvent = async (guildId, title, description, startDate
     }
 }
 
+// update a schedule event
+export const updateScheduleEvent = async (guildId, eventId, options) => {
+
+    const guild = await discordClient.guilds.cache.get(guildId);
+    if (guild) {
+        try {
+            return await guild.scheduledEvents.edit(eventId, options);
+        }
+        catch (err) {
+            console.log(err);
+            return null;
+        }
+    }
+}
+
 
 export const deleteScheduleEvent = async (guildId, eventId) => {
     const guild = await discordClient.guilds.cache.get(guildId);
