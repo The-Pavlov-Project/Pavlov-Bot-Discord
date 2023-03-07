@@ -9,7 +9,6 @@ env:
   IMAGE_NAME: pavlov-bot-discord
   IMAGE_TAG: latest
   DOCKERFILE_PATH: Dockerfile
-  DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_PASSWORD }}
 
 jobs:
   build_and_publish:
@@ -30,4 +29,4 @@ jobs:
       - name: Push Docker image
         run: |
           docker tag $IMAGE_NAME:$IMAGE_TAG $DOCKERHUB_USERNAME/$IMAGE_NAME:$IMAGE_TAG
-          docker push $DOCKERHUB_USERNAME/$IMAGE_NAME:$IMAGE_TAG
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/$IMAGE_NAME:$IMAGE_TAG
