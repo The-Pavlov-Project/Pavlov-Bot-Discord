@@ -9,6 +9,7 @@ env:
   IMAGE_NAME: pavlov-bot-discord
   IMAGE_TAG: latest
   DOCKERFILE_PATH: Dockerfile
+  DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_PASSWORD }}
 
 jobs:
   build_and_publish:
