@@ -11,7 +11,7 @@
   "name": "pavlov-bot-discord",
   "version": "1.0.0",
   "scripts": {
-    "run": "node index.js",
+    "start": "node index.js",
     "register": "node src/register.cjs"
   },
   "repository": {
