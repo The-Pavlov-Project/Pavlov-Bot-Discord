@@ -15,3 +15,9 @@ DISCORD_TOKEN=your_token
 API_TOKEN=your_token
 ```
 
+### Publish the image 
+
+`docker tag pavlov-bot-discord-bot docker.pkg.github.com/the-pavlov-project/pavlov-bot-discord/pavlov-discord-bot:latest`
+`docker login docker.pkg.github.com -u <username> -p <token>`
+`docker push docker.pkg.github.com/the-pavlov-project/pavlov-bot-discord/pavlov-discord-bot:latest`
+

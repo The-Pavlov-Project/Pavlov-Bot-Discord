@@ -1,7 +1,8 @@
 version: '3'
 services:
   discord-bot:
-    container_name: pavlovl-bot-discord
+    container_name: discord-bot
+    image: pavlov-bot-discord:latest
     build: .
     env_file: .env
     ports:
